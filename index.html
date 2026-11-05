@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Matrix Multiplication</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>Interactive Matrix Multiplication</h1>
+            <p>
+                Explore matrix multiplication through
+                row-column selection and mathematical calculations.
+            </p>
+        </header>
+
+        <!-- MATRIX INPUT -->
+        <section class="input-section">
+
+            <h2>Enter Matrices</h2>
+
+            <div class="input-grid">
+
+                <div class="input-card">
+                    <label for="matrixA">Matrix A</label>
+
+                    <textarea id="matrixA">2 3 4
+1 5 2</textarea>
+                </div>
+
+                <div class="input-card">
+                    <label for="matrixB">Matrix B</label>
+
+                    <textarea id="matrixB">1 2
+3 4
+2 1</textarea>
+                </div>
+
+            </div>
+
+            <button id="updateMatrices">
+                Update Matrices
+            </button>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+        <!-- MATRIX DIMENSIONS -->
+        <div id="dimensions" class="dimensions"></div>
+
+        <!-- SELECTION -->
+        <section class="selection-section">
+
+            <h2>Select Row and Column</h2>
+
+            <div class="selection-grid">
+
+                <div>
+                    <label for="rowSelect">
+                        Select Row of Matrix A
+                    </label>
+
+                    <select id="rowSelect"></select>
+                </div>
+
+                <div>
+                    <label for="columnSelect">
+                        Select Column of Matrix B
+                    </label>
+
+                    <select id="columnSelect"></select>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MATRICES -->
+        <section class="matrices-section">
+
+            <div class="matrix-card">
+                <h3>Matrix A</h3>
+                <div id="displayA" class="matrix-container"></div>
+            </div>
+
+            <div class="matrix-card">
+                <h3>Matrix B</h3>
+                <div id="displayB" class="matrix-container"></div>
+            </div>
+
+            <div class="matrix-card">
+                <h3>Result Matrix C</h3>
+                <div id="displayC" class="matrix-container"></div>
+            </div>
+
+        </section>
+
+        <!-- CALCULATION -->
+        <section class="calculation-section">
+
+            <h2>Selected Element Calculation</h2>
+
+            <p id="selectedElement">
+                Select a row and column.
+            </p>
+
+            <button id="calculateButton">
+                Calculate Selected Element
+            </button>
+
+            <div id="calculationResult"></div>
+
+            <button id="resetButton" class="reset-button">
+                Reset Calculation
+            </button>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            Interactive Matrix Multiplication Web Application
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
