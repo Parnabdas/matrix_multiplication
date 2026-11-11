@@ -314,7 +314,35 @@ footer {
     text-align: center;
     color: #8492A6;
     font-size: 13px;
-    padding: 25px 0;
+    padding: 25px 15px;
+    margin-top: 35px;
+    border-top: 1px solid #DCE3EB;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer .application-name {
+    color: #64748B;
+    font-size: 13px;
+}
+
+footer .created-by {
+    color: #26374A;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer .created-by strong {
+    color: #174A7E;
+    font-weight: 750;
+}
+
+footer .copyright {
+    color: #94A3B8;
+    font-size: 12px;
+    margin-top: 8px;
 }
 
 /* =====================================================
@@ -352,6 +380,10 @@ footer {
 
     .matrix-card {
         min-height: 150px;
+    }
+
+    footer {
+        padding: 20px 10px;
     }
 
 }
